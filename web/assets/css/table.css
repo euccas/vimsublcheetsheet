@@ -1,0 +1,33 @@
+table {
+  border-collapse: collapse;  
+  width: 100%; 
+  margin: 0 auto 5rem;
+}
+
+td {
+  padding: 1.5rem; 
+  font-size: 1.3rem; 
+}
+
+tr {
+  background: hsl(50, 50%, 80%); 
+}
+
+tr, td { 
+  transition: .4s ease-in; 
+} 
+
+//tr:first-child {background: hsla(12, 100%, 40%, 0.5); }
+
+tr:nth-child(even) {
+  background: #fff; 
+}
+
+td:empty {
+  background: #fff;
+}
+
+
+tr:hover:not(#firstrow), tr:hover td:empty {background: #FFB273; pointer-events: visible;}
+tr:hover:not(#firstrow) { transform: scale(1.2); font-weight: 700; box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);}
+
